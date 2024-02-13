@@ -9,7 +9,7 @@ import t from '@/store/types';
 const initialState = {
   data: {
     organization: {
-      name: 'Bigcapital, LLC',
+      name: 'Dealway, LLC',
     },
     manualJournals: {
       tableSize: 'small',

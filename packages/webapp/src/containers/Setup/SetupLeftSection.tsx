@@ -76,8 +76,8 @@ export default function SetupLeftSection() {
       <div className={'content'}>
         <div className={'content__logo'}>
           <Icon
-            icon="bigcapital"
-            className={'bigcapital--alt'}
+            icon="dealway"
+            className={'dealway--alt'}
             height={37}
             width={190}
           />

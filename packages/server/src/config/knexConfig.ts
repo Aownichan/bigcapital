@@ -17,7 +17,7 @@ export const tenantKnexConfig = (tenant: ITenant) => {
       directory: config.tenant.migrations_dir,
     },
     seeds: {
-      tableName: 'bigcapital_seeds',
+      tableName: 'dealway_seeds',
       directory: config.tenant.seeds_dir,
     },
     pool: { min: 0, max: 5 },

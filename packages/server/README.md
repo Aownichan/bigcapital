@@ -1,1 +1,1 @@
-# @bigcapital/server
+# @dealway/server

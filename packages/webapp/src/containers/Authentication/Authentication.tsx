@@ -24,7 +24,7 @@ export function Authentication() {
       <AuthPage>
         <AuthInsider>
           <AuthLogo>
-            <Icon icon="bigcapital" height={37} width={214} />
+            <Icon icon="dealway" height={37} width={214} />
           </AuthLogo>
 
           <AuthMetaBootProvider>

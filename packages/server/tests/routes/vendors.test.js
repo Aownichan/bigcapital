@@ -45,9 +45,9 @@ describe('route: `/vendors`', () => {
           first_name: 'Ahmed',
           last_name: 'Bouhuolia',
 
-          company_name: 'Bigcapital',
+          company_name: 'Dealway',
 
-          display_name: 'Ahmed Bouhuolia, Bigcapital',
+          display_name: 'Ahmed Bouhuolia, Dealway',
 
           email: 'a.bouhuolia@live.com',
           work_phone: '0927918381',
@@ -76,8 +76,8 @@ describe('route: `/vendors`', () => {
 
       expect(foundVendor[0].firstName).equals('Ahmed');
       expect(foundVendor[0].lastName).equals('Bouhuolia');
-      expect(foundVendor[0].companyName).equals('Bigcapital');
-      expect(foundVendor[0].displayName).equals('Ahmed Bouhuolia, Bigcapital');
+      expect(foundVendor[0].companyName).equals('Dealway');
+      expect(foundVendor[0].displayName).equals('Ahmed Bouhuolia, Dealway');
 
       expect(foundVendor[0].email).equals('a.bouhuolia@live.com');
       
@@ -164,7 +164,7 @@ describe('route: `/vendors`', () => {
         .set('x-access-token', loginRes.body.token)
         .set('organization-id', tenantWebsite.organizationId)
         .send({
-          display_name: 'Ahmed Bouhuolia, Bigcapital',
+          display_name: 'Ahmed Bouhuolia, Dealway',
         });
 
       expect(res.status).equals(404);
@@ -180,14 +180,14 @@ describe('route: `/vendors`', () => {
         .set('x-access-token', loginRes.body.token)
         .set('organization-id', tenantWebsite.organizationId)
         .send({
-          display_name: 'Ahmed Bouhuolia, Bigcapital',
+          display_name: 'Ahmed Bouhuolia, Dealway',
         });
 
       expect(res.status).equals(200);
       const foundVendor = await Vendor.tenant().query().where('id', res.body.id);
 
       expect(foundVendor.length).equals(1);
-      expect(foundVendor[0].displayName).equals('Ahmed Bouhuolia, Bigcapital');
+      expect(foundVendor[0].displayName).equals('Ahmed Bouhuolia, Dealway');
     })
   });
 });

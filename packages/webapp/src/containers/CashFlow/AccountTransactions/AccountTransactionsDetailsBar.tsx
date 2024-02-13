@@ -63,7 +63,7 @@ function AccountBalanceItem() {
 
   return (
     <AccountBalanceItemWrap>
-      {intl.get('cash_flow_transaction.balance_in_bigcapital')} {''}
+      {intl.get('cash_flow_transaction.balance_in_dealway')} {''}
       <AccountBalanceAmount>
         {currentAccount.formatted_amount}
       </AccountBalanceAmount>

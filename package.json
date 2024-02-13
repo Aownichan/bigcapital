@@ -1,14 +1,14 @@
 {
-  "name": "bigcapital-monorepo",
+  "name": "dealway-monorepo",
   "private": true,
   "scripts": {
     "dev": "cross-env PORT=4000 craco start",
     "build": "lerna run build",
-    "dev:webapp": "lerna run dev --scope \"@bigcapital/webapp\"",
-    "build:webapp": "lerna run build --scope \"@bigcapital/webapp\"",
-    "dev:server": "lerna run dev --scope \"@bigcapital/server\"",
-    "build:server": "lerna run build --scope \"@bigcapital/server\"",
-    "serve:server": "lerna run serve --scope \"@bigcapital/server\"",
+    "dev:webapp": "lerna run dev --scope \"@dealway/webapp\"",
+    "build:webapp": "lerna run build --scope \"@dealway/webapp\"",
+    "dev:server": "lerna run dev --scope \"@dealway/server\"",
+    "build:server": "lerna run build --scope \"@dealway/server\"",
+    "serve:server": "lerna run serve --scope \"@dealway/server\"",
     "test:e2e": "playwright test",
     "prepare": "husky install"
   },

@@ -18,17 +18,17 @@ export default class SendInviteUsersMailMessage {
       .findById(tenantId)
       .withGraphFetched('metadata');
 
-    const root = path.join(global.__views_dir, '/images/bigcapital.png');
+    const root = path.join(global.__views_dir, '/images/dealway.png');
 
     const mail = new Mail()
-      .setSubject(`${fromUser.firstName} has invited you to join a Bigcapital`)
+      .setSubject(`${fromUser.firstName} has invited you to join a Dealway`)
       .setView('mail/UserInvite.html')
       .setTo(invite.email)
       .setAttachments([
         {
-          filename: 'bigcapital.png',
+          filename: 'dealway.png',
           path: root,
-          cid: 'bigcapital_logo',
+          cid: 'dealway_logo',
         },
       ])
       .setData({

@@ -78,16 +78,6 @@ function getAllSystemTenants(knex) {
 //   initSystemKnex,
 // };
 
-// - bigcapital system:migrate:latest
-// - bigcapital system:migrate:rollback
-// - bigcapital tenants:migrate:latest
-// - bigcapital tenants:migrate:latest --tenant_id=XXX
-// - bigcapital tenants:migrate:rollback
-// - bigcapital tenants:migrate:rollback --tenant_id=XXX
-// - bigcapital tenants:migrate:make
-// - bigcapital system:migrate:make
-// - bigcapital tenants:list
-
 commander
   .command('system:migrate:rollback')
   .description('Migrate the system database of the application.')

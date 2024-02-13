@@ -16,14 +16,14 @@ export default class AuthenticationMailMesssages {
     token: string
   ): Promise<void> {
     await new Mail()
-      .setSubject('Bigcapital - Password Reset')
+      .setSubject('Dealway Accounting - Password Reset')
       .setView('mail/ResetPassword.html')
       .setTo(user.email)
       .setAttachments([
         {
-          filename: 'bigcapital.png',
-          path: `${global.__views_dir}/images/bigcapital.png`,
-          cid: 'bigcapital_logo',
+          filename: 'dealway.png',
+          path: `${global.__views_dir}/images/dealway.png`,
+          cid: 'dealway_logo',
         },
       ])
       .setData({

@@ -53,7 +53,7 @@ function SidebarHeadJSX({
 
       <div className="sidebar__head-logo">
         <Icon
-          icon={'mini-bigcapital'}
+          icon={'mini-dealway'}
           width={28}
           height={28}
           className="bigcapital--alt"

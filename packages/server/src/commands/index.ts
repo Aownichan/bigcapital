@@ -1,4 +1,4 @@
 import commander from 'commander';
-import './bigcapital';
+import './dealway';
 
 commander.parse();

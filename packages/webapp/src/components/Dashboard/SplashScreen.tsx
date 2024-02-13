@@ -1,10 +1,10 @@
 // @ts-nocheck
 import * as R from 'ramda';
-import BigcapitalLoading from './BigcapitalLoading';
+import DealwayLoading from './DealwayLoading';
 import withDashboard from '@/containers/Dashboard/withDashboard';
 
 function SplashScreenComponent({ splashScreenLoading }) {
-  return splashScreenLoading ? <BigcapitalLoading /> : null;
+  return splashScreenLoading ? <DealwayLoading /> : null;
 }
 
 export const SplashScreen = R.compose(

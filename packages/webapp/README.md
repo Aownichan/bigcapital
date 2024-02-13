@@ -1,1 +1,1 @@
-# @bigcapital/webapp
+# @dealway-accounting/webapp

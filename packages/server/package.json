@@ -1,5 +1,5 @@
 {
-  "name": "@bigcapital/server",
+  "name": "@dealway/server",
   "version": "0.10.2",
   "description": "",
   "main": "src/server.ts",
@@ -17,7 +17,7 @@
   "author": "Ahmed Bouhuolia, <a.bouhuolia@gmail.com>",
   "license": "ISC",
   "bin": {
-    "bigcapital": "./bin/bigcapital.js"
+    "dealway": "./bin/dealway.js"
   },
   "dependencies": {
     "@casl/ability": "^5.4.3",

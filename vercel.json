@@ -4,7 +4,7 @@
   "outputDirectory": "packages/webapp/build",
   "rewrites": [{
       "source": "/api/:slug*",
-      "destination": "https://dev.bigcapital.ly/api/:slug*"
+      "destination": "https://dealway.com"
     },
     {
       "source": "/(.*)",
