@@ -4,22 +4,22 @@ import intl from 'react-intl-universal';
 export const getFooterLinks = () => [
   {
     title: intl.get('blog'),
-    link: 'https://docs.dealway.ly/blog',
+    link: 'https://dealway.com',
   },
   {
     title: intl.get('community'),
-    link: 'https://discord.com/invite/c8nPBJafeb',
+    link: 'https://dealway.com',
   },
   {
     title: intl.get('support'),
-    link: 'https://discord.com/invite/c8nPBJafeb',
+    link: 'https://dealway.com',
   },
   {
     title: intl.get('docs'),
-    link: 'https://docs.dealway.ly',
+    link: 'https://dealway.com',
   },
   {
     title: 'Dealway Accounting',
-    link: 'http://Dealway.ly',
+    link: 'https://dealway.com',
   },
 ];
